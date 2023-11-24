@@ -7,8 +7,12 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Grechen+Fuemen&family=Irish+Grover&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,700;0,800;1,700&family=Overpass:ital,wght@0,200;1,100&family=Raleway:ital,wght@0,100;0,200;0,400;1,100;1,300;1,400&family=Readex+Pro:wght@200;300;400;500;600;700&family=Roboto:wght@500;700&display=swap"rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Grechen+Fuemen&family=Irish+Grover&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,700;0,800;1,700&family=Overpass:ital,wght@0,200;1,100&family=Raleway:ital,wght@0,100;0,200;0,400;0,700;1,100;1,300;1,400&family=Readex+Pro:wght@200;300;400;500;600;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Grechen+Fuemen&family=Irish+Grover&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,700;0,800;1,700&family=Overpass:ital,wght@0,200;1,100&family=Raleway:ital,wght@0,100;0,200;0,400;1,100;1,300;1,400&family=Readex+Pro:wght@200;300;400;500;600;700&family=Roboto:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Grechen+Fuemen&family=Irish+Grover&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,700;0,800;1,700&family=Overpass:ital,wght@0,200;1,100&family=Raleway:ital,wght@0,100;0,200;0,400;0,700;1,100;1,300;1,400&family=Readex+Pro:wght@200;300;400;500;600;700&family=Roboto:wght@500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/libs.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -27,12 +31,36 @@
             <a class='header__phone' href="tel:61383766284">+61 3 8376 6284</a>
           </div>
           <div class="header__box">
-            <a class='notification' href="#"></a>
-            <a class='message' href="#"></a>
-            <a class='basket' href="#"></a>
-            <a class='user' href=""></a>
-            <a class="header__btn header__btn-login" href="">Login</a>
-            <a class="header__btn header__btn-register" href="">Register</a>
+            <a class='notification header__circle active icon-bell-o' href="#"><span>8</span></a>
+            <a class='message header__circle active icon-envelope-o' href="#"><span>5</span></a>
+            <a class='basket header__circle active icon-shopping-cart' href="#"><span>8</span></a>
+            <div class="user__box">
+            <a class='user' href="">
+              <div class="user__inner">
+                <div class="user__img"><img src="./images/content/user-login.jpg" alt=""></div>
+                <div class="user__info">
+                  <div class="user__name">Mike Hussy</div>
+                  <div class="user__money">$171.00</div>
+                </div>
+              </div>
+            </a>
+            <div class="user__menu">
+              <ul>
+                <li><a class ='angel-right'href="#">Portfolio</a></li>
+                <li><a class ='angel-right'href="#">Account Setting</a></li>
+                <li><a class ='angel-right'href="#">Downloads</a></li>
+                <li><a class ='angel-right'href="#">Wishlist</a></li>
+                <li><a class ='angel-right'href="#">Uploads Item</a></li>
+                <li><a class ='angel-right'href="#">Statement</a></li>
+                <li><a class ='angel-right'href="#">Profile Page</a></li>
+                <li><a class ='angel-right'href="#">Withdraws</a></li>
+                
+              </ul>
+            </div>
+          </div>
+            <a class="header__btn header__btn-login header__btn-login--off" href="">Login</a>
+            <a class="header__btn header__btn-logout header__btn-login--on" href="">Logout</a>
+            <a class="header__btn header__btn-register header__btn-login--off" href="">Register</a>
           </div>
         </div>
       </div>
@@ -669,12 +697,13 @@
         <div class="advantages__inner">
           <div class="advantages__item">
             <div class="advantages__item-images icosvg-1">
-              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="200px" height="60px">  
-                  <path d="M 15 2 C 11.145666 2 8 5.1456661 8 9 L 8 11 L 6 11 C 4.895 11 4 11.895 4 13 
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="200px" height="60px">
+                <path d="M 15 2 C 11.145666 2 8 5.1456661 8 9 L 8 11 L 6 11 C 4.895 11 4 11.895 4 13 
                   L 4 25 C 4 26.105 4.895 27 6 27 L 24 27 C 25.105 27 26 26.105 26 25 L 26 13 C 26 11.895
                    25.105 11 24 11 L 22 11 L 22 9 C 22 5.2715823 19.036581 2.2685653 15.355469 2.0722656
                     A 1.0001 1.0001 0 0 0 15 2 z M 15 4 C 17.773666 4 20 6.2263339 20 9 L 20 11 L 10 11
-                     L 10 9 C 10 6.2263339 12.226334 4 15 4 z"/></svg>
+                     L 10 9 C 10 6.2263339 12.226334 4 15 4 z" />
+              </svg>
             </div>
             <div class="advantages__item-title">
               Easily Buy & Sell
@@ -686,10 +715,11 @@
           </div>
           <div class="advantages__item">
             <div class="advantages__item-images icosvg-2">
-              <svg height="800px" width="800px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	              viewBox="0 0 512 512"  xml:space="preserve">
-                  <g>
-                  	<path class="st0" d="M446.934,139.344l-39.42-0.203c34.795-21.305,50.322-62.586,34.877-96.516C430.553,16.617,402.781,0,373.344,0
+              <svg height="800px" width="800px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                <g>
+                  <path class="st0"
+                    d="M446.934,139.344l-39.42-0.203c34.795-21.305,50.322-62.586,34.877-96.516C430.553,16.617,402.781,0,373.344,0
                   		c-12.482,0-25.264,2.988-37.26,9.516c-26.418,14.371-46.818,34.531-62.442,55.027c-0.275,0.36-0.553,0.711-0.826,1.07
                   		c-2.394,3.176-4.66,6.34-6.824,9.512c-0.877,1.269-1.762,2.519-2.625,3.816c-0.934,1.418-1.789,2.808-2.676,4.215
                   		c-1.594,2.484-3.213,4.914-4.756,7.488c-16.596-28.281-42.283-60.602-80.02-81.129C163.92,2.988,151.139,0,138.656,0
@@ -700,10 +730,10 @@
                   		c23.188,12.613,40.676,31.809,53.43,50.574c1.953,2.934,3.867,5.945,5.73,9.07C207.225,112.289,202.512,112.465,197.674,112.465z
                   		 M397.285,80.762c-3.592,8.192-10.86,15.262-19.942,19.395c-17.945,8.168-39.148,12.308-63.018,12.308
                   		c-4.277,0-8.412-0.18-12.467-0.418c-0.564-0.062-1.131-0.082-1.695-0.16c13.062-21.422,32.324-44.906,59.223-59.539
-                  		c4.373-2.379,9.07-3.586,13.957-3.586c10.584,0,20.957,5.914,24.666,14.063C401.176,69.777,398.914,77.047,397.285,80.762z"/>
-                  	<path class="st0" d="M76.16,455.27c0,31.332,25.4,56.73,56.73,56.73h93.41V280.062H76.16V455.27z"/>
-                  	<path class="st0" d="M285.699,512h93.412c31.33,0,56.728-25.398,56.728-56.73V280.062h-150.14V512z"/>
-                  </g>
+                  		c4.373-2.379,9.07-3.586,13.957-3.586c10.584,0,20.957,5.914,24.666,14.063C401.176,69.777,398.914,77.047,397.285,80.762z" />
+                  <path class="st0" d="M76.16,455.27c0,31.332,25.4,56.73,56.73,56.73h93.41V280.062H76.16V455.27z" />
+                  <path class="st0" d="M285.699,512h93.412c31.33,0,56.728-25.398,56.728-56.73V280.062h-150.14V512z" />
+                </g>
               </svg>
             </div>
             <div class="advantages__item-title">
@@ -716,10 +746,13 @@
           </div>
           <div class="advantages__item">
             <div class="advantages__item-images icosvg-3">
-              <svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
                 <title>heart</title>
-                <path d="M0.256 12.16q0.544 2.080 2.080 3.616l13.664 14.144 13.664-14.144q1.536-1.536 2.080-3.616t0-4.128-2.080-3.584-3.584-2.080-4.16 0-3.584 2.080l-2.336 2.816-2.336-2.816q-1.536-1.536-3.584-2.080t-4.128 0-3.616 2.080-2.080 3.584 0 4.128z"></path>
-                </svg>
+                <path
+                  d="M0.256 12.16q0.544 2.080 2.080 3.616l13.664 14.144 13.664-14.144q1.536-1.536 2.080-3.616t0-4.128-2.080-3.584-3.584-2.080-4.16 0-3.584 2.080l-2.336 2.816-2.336-2.816q-1.536-1.536-3.584-2.080t-4.128 0-3.616 2.080-2.080 3.584 0 4.128z">
+                </path>
+              </svg>
             </div>
             <div class="advantages__item-title">
               100% Secure Payment
@@ -733,97 +766,99 @@
       </div>
     </section>
     <section class="author" style="background-image: url(../images/author-bg.jpg);">
-        <div class="author__box">
-          <div class="author__title">
-              Over <span>20,000</span> Author
-              Are involved Here!
-          </div>
-          <a href="#" class="author__link">Become A Author</a>
+      <div class="author__box">
+        <div class="author__title">
+          Over <span>20,000</span> Author
+          Are involved Here!
         </div>
+        <a href="#" class="author__link">Become A Author</a>
+      </div>
     </section>
     <section class="tutorial">
       <div class="container">
-          <div class="tutorial__title title">
-            Free Monthly Tutorials To Help You Width Your Project
+        <div class="tutorial__title title">
+          Free Monthly Tutorials To Help You Width Your Project
+        </div>
+        <div class="tutorial__inner">
+          <div class="tutorial__item">
+            <div class="tutorial__item-images" style="background-image: url(./images/content/tutorial.jpg);"></div>
+            <div class="tutorial__item-title">Web Design Tutorials</div>
           </div>
-          <div class="tutorial__inner">
-            <div class="tutorial__item">
-              <div class="tutorial__item-images" style="background-image: url(./images/content/tutorial.jpg);"></div>
-              <div class="tutorial__item-title">Web Design Tutorials</div>
-            </div>
-            <div class="tutorial__item">
-              <div class="tutorial__item-images" style="background-image: url(./images/content/tutorial.jpg);"></div>
-              <div class="tutorial__item-title">WordPress Tutorials</div>
-            </div>
-            <div class="tutorial__item">
-              <div class="tutorial__item-images" style="background-image: url(./images/content/tutorial.jpg);"></div>
-              <div class="tutorial__item-title">HTML & CSS Tutorials</div>
-            </div>
+          <div class="tutorial__item">
+            <div class="tutorial__item-images" style="background-image: url(./images/content/tutorial.jpg);"></div>
+            <div class="tutorial__item-title">WordPress Tutorials</div>
           </div>
+          <div class="tutorial__item">
+            <div class="tutorial__item-images" style="background-image: url(./images/content/tutorial.jpg);"></div>
+            <div class="tutorial__item-title">HTML & CSS Tutorials</div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__content">
       <div class="container">
-          <div class="footer__inner">
-            <div class="footer__col">
-              <div class="footer__col-title">About Company</div>
-              <div class="footer__col-text">
-                Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim dignisusoen disse.Fusce sit amet urna iat.praesent vel 
-                rutrum purus.
-              </div> 
-              <div class="footer__col-info ">
-                PQ Box 16`122 Collons Street West 
-                Victoria 8007 Australia
+        <div class="footer__inner">
+          <div class="footer__col">
+            <div class="footer__col-title">About Company</div>
+            <div class="footer__col-text">
+              Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim dignisusoen disse.Fusce sit amet urna
+              iat.praesent vel
+              rutrum purus.
+            </div>
+            <div class="footer__col-info ">
+              PQ Box 16`122 Collons Street West
+              Victoria 8007 Australia
+            </div>
+            <a class="footer__col-info footer__info-phone" href="tel:61383766284">+61 3 83 76 62 84</a>
+          </div>
+          <div class="footer__col footer__col-menu">
+            <div class="footer__col-title">Join Our Community</div>
+            <ul class="footer__col-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Forums</a></li>
+              <li><a href="#">Become an Author</a></li>
+              <li><a href="#">Community Meetups</a></li>
+              <li><a href="#">Become an Affiliate</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col-menu">
+            <div class="footer__col-title">Need Help?</div>
+            <ul class="footer__col-list">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Foxtar Market Terms</a></li>
+              <li><a href="#">Author Terms</a></li>
+              <li><a href="#">Foxtar Licenses</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer__col ">
+            <div class="footer__col-title">Follow Us On</div>
+            <ul class="footer_social-link">
+              <li><a class='link-facebook' href="#"></a></li>
+              <li><a class='link-twitter' href="#"></a></li>
+              <li><a class='link-youtube' href="#"></a></li>
+              <li><a class='link-pinterest' href="#"></a></li>
+              <li><a class='link-linledin' href="#"></a></li>
+            </ul>
+            <div class="footer__form">
+              <div class="footer__form-title">
+                Newsletter Sign Up!
               </div>
-              <a class="footer__col-info footer__info-phone" href="tel:61383766284">+61 3 83 76 62 84</a>
-            </div>
-            <div class="footer__col footer__col-menu">
-              <div class="footer__col-title">Join Our Community</div>
-              <ul class="footer__col-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Forums</a></li>
-                <li><a href="#">Become an Author</a></li>
-                <li><a href="#">Community Meetups</a></li>
-                <li><a href="#">Become an Affiliate</a></li>
-              </ul>
-            </div>
-            <div class="footer__col footer__col-menu" >
-              <div class="footer__col-title">Need Help?</div>
-              <ul class="footer__col-list">
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Foxtar Market Terms</a></li>
-                <li><a href="#">Author Terms</a></li>
-                <li><a href="#">Foxtar Licenses</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="footer__col ">
-              <div class="footer__col-title">Follow Us On</div>
-                <ul class="footer_social-link">
-                  <li><a class='link-facebook' href="#"></a></li>
-                  <li><a class='link-twitter' href="#"></a></li>
-                  <li><a class='link-youtube' href="#"></a></li>
-                  <li><a class='link-pinterest' href="#"></a></li>
-                  <li><a class='link-linledin' href="#"></a></li>
-                </ul>
-                <div class="footer__form">
-                  <div class="footer__form-title">
-                    Newsletter Sign Up!
-                  </div>
-                  <form>
-                    <input type="text" placeholder="E-mail Address">
-                    <button type="submit"></button>
-                  </form>
-                </div>
+              <form>
+                <input type="text" placeholder="E-mail Address">
+                <button type="submit"></button>
+              </form>
             </div>
           </div>
+        </div>
       </div>
     </div>
     <div class="footer__copy">
       <div class="container">
-          <div class="footer__copy-text">2017 Faxtar market place. Trademarks and brands are the property of their respective owners.</div>
+        <div class="footer__copy-text">2017 Faxtar market place. Trademarks and brands are the property of their
+          respective owners.</div>
       </div>
     </div>
   </footer>
